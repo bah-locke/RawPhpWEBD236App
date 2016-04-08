@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{$title}}</title>
+        <link rel="stylesheet" href="@@static/style.css@@" />
+    </head>
+    <body>
+        <div class="content">
+[[ include_once 'include/util.inc'; 
+  include_once 'include/Authenticator.inc';
+  include_once 'models/Users.inc';
+]]
+[[ if (isLoggedIn()) : ]]
+	<p>Welcome, {{$_SESSION['fname']}} {{$_SESSION['lname']}}</p>
+	<p class='loggedin'><a class="hlink" href='@@logout@@'>Log out</a></p>
+	[[ if (Authenticator::instance()->can('admin_page')) : ]]
+		<p class='loggedin'><a class="hlink" href="@@admin@@">Admin</a></p>
+	[[ endif; ]]
+	<p class='loggedin'><a class="hlink" href='@@users/view/{{$_SESSION['userid']}}@@'>My Profile</a></p>
+	<p class='loggedin'><a class="hlink" href='@@index@@'>Home</a></p>
+[[ else : ]]
+    <p class='login'><a class="hlink" href='@@login@@'>Log in</a></p>
+    <p class='login'><a class="hlink" href='@@register@@'>Register</a></p>
+	<p class='login'><a class="hlink" href='@@index@@'>Home</a></p>
+[[ endif; ]]

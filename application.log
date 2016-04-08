@@ -1,0 +1,15 @@
+2015-12-14 01:21:09 INFO Creating tables
+2015-12-14 01:21:10 INFO Creating default Users group.
+2015-12-14 01:21:11 INFO Creating default Administrators group.
+2015-12-14 02:42:20 WARN User 18 attempted unauthorized operation admin_page
+2015-12-14 02:43:18 WARN User 18 attempted unauthorized operation admin_page
+2015-12-14 02:43:40 WARN User 18 attempted unauthorized operation admin_page
+2015-12-14 03:47:14 WARN User 19 attempted unauthorized operation question_view
+2015-12-14 03:47:38 WARN User 19 attempted unauthorized operation question_view
+2015-12-14 03:48:04 WARN User 19 attempted unauthorized operation question_view
+2015-12-14 03:48:26 WARN User 19 attempted unauthorized operation question_view
+2015-12-14 03:50:02 WARN User 19 attempted unauthorized operation answer_create
+2015-12-14 04:03:11 WARN User 0 attempted unauthorized operation admin_page
+2015-12-15 03:50:25 WARN User 22 attempted unauthorized operation question_create
+2015-12-15 05:20:37 WARN User 19 attempted unauthorized operation edit_todo
+2015-12-15 05:38:53 WARN User 19 attempted unauthorized operation question_view
